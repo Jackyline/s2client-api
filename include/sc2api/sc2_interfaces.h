@@ -226,6 +226,16 @@ public:
     //!< \sa Observation GetObservation()
     virtual const SC2APIProtocol::Observation* GetRawObservation() const = 0;
 
+    //! Returns 'true' if the given unit is carrying vespene.
+    //!< \param unit
+    //!< \return Carry
+    virtual bool IsUnitCarryVespene(const Unit unit) const = 0;
+
+    //! Returns 'true' if the given unit is carrying mineral.
+    //!< \param unit
+    //!< \return Carry
+    virtual bool IsUnitCarryMineral(const Unit unit) const = 0;
+
 };
 
 
